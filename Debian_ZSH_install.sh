@@ -15,6 +15,7 @@ read CHANGE
 if [ "$CHANGE" = "y" ]; then {
   apt-get -y install zsh
   cd /root
+  # source http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
   wget -O --no-check-certificate .zshrc https://raw.githubusercontent.com/BenniFFM/Linux_Install/main/etc_zsh_zshrc
   find /home -maxdepth 1 -type d -exec sh -c 'cp /root/.zshrc "$0" -P' {} \;
   sed -i "s/bash/zsh/" /etc/passwd
