@@ -8,7 +8,7 @@
 #
 ####################### Download files #######################
 wget http://vserver.it-nickel.com/home/check_mk/agents/check_mk_agent.linux -O /usr/bin/check_mk_agent 
-wget -O /usr/bin/waitmax
+wget https://github.com/BenniFFM/Linux_Install/blob/cd62d7885e6bce70f930da0edabd51f614d70828/waitmax_mips -O /usr/bin/waitmax
 ####################### config files #######################
 # /etc/inetd.conf
 echo "# Nagios check_mk Agent" >> /etc/inetd.conf 
