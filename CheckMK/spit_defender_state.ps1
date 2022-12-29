@@ -38,8 +38,8 @@ if ($osVersion -eq 6) {
 if (!$cmdExists) { exit }
 
 Function formatValue($value) {
-
-   if($value){return ($value.ToString()).Replace(' ','-')}else{return $null}
+    return ($value.ToString()).Replace(' ','-')
+   #if($value){return ($value.ToString()).Replace(' ','-')}else{return $null}
 }
 
 $values = @($osVersion)
